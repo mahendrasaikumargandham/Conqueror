@@ -1,0 +1,32 @@
+require 5.002;
+use strict;
+(my $ME = $0) =~ s|.*/||;
+sub END
+{
+  defined fileno STDOUT
+    or return;
+  close STDOUT
+    and return;
+  warn "$ME: closing standard output: $!\n";
+  $? ||= 1;
+}
+my @line;
+while (<>)
+  {
+    chomp;
+    s/[[:blank:]]+/ /g;
+    $_
+      and push @line, $_;
+  }
+
+my $indent = '  ';
+
+print "static char const G_line[] =\n{\n";
+foreach (@line)
+  {
+    s/./'$&',/g;
+    s/'\\'/'\\\\'/g;
+    s/'''/'\\''/g;
+    print "$indent${_}0,\n";
+  }
+print "};\n";
