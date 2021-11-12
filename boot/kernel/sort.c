@@ -68,7 +68,6 @@ enum { SUBTHREAD_LINES_HEURISTIC = 128 * 1024 };
 verify (4 <= SUBTHREAD_LINES_HEURISTIC);
 enum { DEFAULT_MAX_THREADS = 8 };
 
-/* Exit statuses.  */
 enum
   {
     SORT_OUT_OF_ORDER = 1,
@@ -83,20 +82,13 @@ enum
 
 enum
   {
-    /* Level of the end-of-merge node, one level above the root. */
     MERGE_END = 0,
-
-    /* Level of the root node in merge tree. */
     MERGE_ROOT = 1
   };
-
-/* The representation of the decimal point in the current locale.  */
 static int decimal_point;
 
-/* Thousands separator; if -1, then there isn't one.  */
 static int thousands_sep;
 
-/* Nonzero if the corresponding locales are hard.  */
 static bool hard_LC_COLLATE;
 #if HAVE_NL_LANGINFO
 static bool hard_LC_TIME;
@@ -104,38 +96,29 @@ static bool hard_LC_TIME;
 
 #define NONZERO(x) ((x) != 0)
 
-/* The kind of blanks for '-b' to skip in various options. */
 enum blanktype { bl_start, bl_end, bl_both };
 
-/* The character marking end of line. Default to \n. */
 static char eolchar = '\n';
 
-/* Lines are held in core as counted strings. */
 struct line
 {
-  char *text;			/* Text of the line. */
-  size_t length;		/* Length including final newline. */
-  char *keybeg;			/* Start of first key. */
-  char *keylim;			/* Limit of first key. */
+  char *text;			
+  size_t length;	
+  char *keybeg;		
+  char *keylim;		
 };
 
-/* Input buffers. */
 struct buffer
 {
-  char *buf;			/* Dynamically allocated buffer,
-                                   partitioned into 3 regions:
-                                   - input data;
-                                   - unused area;
-                                   - an array of lines, in reverse order.  */
-  size_t used;			/* Number of bytes used for input data.  */
-  size_t nlines;		/* Number of lines in the line array.  */
-  size_t alloc;			/* Number of bytes allocated. */
-  size_t left;			/* Number of bytes left from previous reads. */
-  size_t line_bytes;		/* Number of bytes to reserve for each line. */
-  bool eof;			/* An EOF has been read.  */
+  char *buf;		
+  size_t used;			
+  size_t nlines;		
+  size_t alloc;			
+  size_t left;			
+  size_t line_bytes;		
+  bool eof;		
 };
 
-/* Sort key.  */
 struct keyfield
 {
   size_t sword;			/* Zero-origin 'word' to start at. */
