@@ -146,11 +146,10 @@ struct month
   int val;
 };
 
-/* Binary merge tree node. */
 struct merge_node
 {
-  struct line *lo;              /* Lines to merge from LO child node. */
-  struct line *hi;              /* Lines to merge from HI child node. */
+  struct line *lo;              
+  struct line *hi;             
   struct line *end_lo;          /* End of available lines from LO. */
   struct line *end_hi;          /* End of available lines from HI. */
   struct line **dest;           /* Pointer to destination of merge. */
