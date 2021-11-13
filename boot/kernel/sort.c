@@ -173,16 +173,7 @@ struct merge_node_queue
                                    when popping. */
 };
 
-/* Used to implement --unique (-u).  */
 static struct line saved_line;
-
-/* FIXME: None of these tables work with multibyte character sets.
-   Also, there are many other bugs when handling multibyte characters.
-   One way to fix this is to rewrite 'sort' to use wide characters
-   internally, but doing this with good performance is a bit
-   tricky.  */
-
-/* Table of blanks.  */
 static bool blanks[UCHAR_LIM];
 
 /* Table of non-printing characters. */
