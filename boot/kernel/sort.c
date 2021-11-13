@@ -121,9 +121,9 @@ struct buffer
 
 struct keyfield
 {
-  size_t sword;			/* Zero-origin 'word' to start at. */
-  size_t schar;			/* Additional characters to skip. */
-  size_t eword;			/* Zero-origin last 'word' of key. */
+  size_t sword;		
+  size_t schar;			
+  size_t eword;			
   size_t echar;			/* Additional characters in field. */
   bool const *ignore;		/* Boolean array of characters to ignore. */
   char const *translate;	/* Translation applied to characters. */
