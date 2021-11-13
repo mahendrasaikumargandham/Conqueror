@@ -150,9 +150,9 @@ struct merge_node
 {
   struct line *lo;              
   struct line *hi;             
-  struct line *end_lo;          /* End of available lines from LO. */
-  struct line *end_hi;          /* End of available lines from HI. */
-  struct line **dest;           /* Pointer to destination of merge. */
+  struct line *end_lo;          
+  struct line *end_hi;         
+  struct line **dest;          
   size_t nlo;                   /* Total Lines remaining from LO. */
   size_t nhi;                   /* Total lines remaining from HI. */
   struct merge_node *parent;    /* Parent node. */
