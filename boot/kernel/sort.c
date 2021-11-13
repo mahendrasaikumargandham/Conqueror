@@ -185,9 +185,6 @@ static bool nondictionary[UCHAR_LIM];
 static char fold_toupper[UCHAR_LIM];
 
 #define MONTHS_PER_YEAR 12
-
-/* Table mapping month names to integers.
-   Alphabetic order allows binary search. */
 static struct month monthtab[] =
 {
   {"APR", 4},
