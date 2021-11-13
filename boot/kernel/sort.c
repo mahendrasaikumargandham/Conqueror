@@ -134,10 +134,10 @@ struct keyfield
   bool general_numeric;		
   bool human_numeric;		
   bool month;			
-  bool reverse;			/* Reverse the sense of comparison. */
-  bool version;			/* sort by version number */
-  bool traditional_used;	/* Traditional key option format is used. */
-  struct keyfield *next;	/* Next keyfield to try. */
+  bool reverse;			
+  bool version;			
+  bool traditional_used;	
+  struct keyfield *next;	
 };
 
 struct month
