@@ -153,9 +153,9 @@ struct merge_node
   struct line *end_lo;          
   struct line *end_hi;         
   struct line **dest;          
-  size_t nlo;                   /* Total Lines remaining from LO. */
-  size_t nhi;                   /* Total lines remaining from HI. */
-  struct merge_node *parent;    /* Parent node. */
+  size_t nlo;                  
+  size_t nhi;                 
+  struct merge_node *parent;   
   struct merge_node *lo_child;  /* LO child node. */
   struct merge_node *hi_child;  /* HI child node. */
   unsigned int level;           /* Level in merge tree. */
