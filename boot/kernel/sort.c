@@ -129,15 +129,11 @@ struct keyfield
   char const *translate;	
   bool skipsblanks;		
   bool skipeblanks;		
-  bool numeric;			/* Flag for numeric comparison.  Handle
-                                   strings of digits with optional decimal
-                                   point, but no exponential notation. */
-  bool random;			/* Sort by random hash of key.  */
-  bool general_numeric;		/* Flag for general, numeric comparison.
-                                   Handle numbers in exponential notation. */
-  bool human_numeric;		/* Flag for sorting by human readable
-                                   units with either SI or IEC prefixes. */
-  bool month;			/* Flag for comparison by month name. */
+  bool numeric;		
+  bool random;			
+  bool general_numeric;		
+  bool human_numeric;		
+  bool month;			
   bool reverse;			/* Reverse the sense of comparison. */
   bool version;			/* sort by version number */
   bool traditional_used;	/* Traditional key option format is used. */
