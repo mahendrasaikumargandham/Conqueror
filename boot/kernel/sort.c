@@ -124,11 +124,11 @@ struct keyfield
   size_t sword;		
   size_t schar;			
   size_t eword;			
-  size_t echar;			/* Additional characters in field. */
-  bool const *ignore;		/* Boolean array of characters to ignore. */
-  char const *translate;	/* Translation applied to characters. */
-  bool skipsblanks;		/* Skip leading blanks when finding start.  */
-  bool skipeblanks;		/* Skip leading blanks when finding end.  */
+  size_t echar;			
+  bool const *ignore;		
+  char const *translate;	
+  bool skipsblanks;		
+  bool skipeblanks;		
   bool numeric;			/* Flag for numeric comparison.  Handle
                                    strings of digits with optional decimal
                                    point, but no exponential notation. */
