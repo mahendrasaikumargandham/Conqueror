@@ -156,7 +156,7 @@ struct merge_node
   size_t nlo;                  
   size_t nhi;                 
   struct merge_node *parent;   
-  struct merge_node *lo_child;  /* LO child node. */
+  struct merge_node *lo_child;  
   struct merge_node *hi_child;  /* HI child node. */
   unsigned int level;           /* Level in merge tree. */
   bool queued;                  /* Node is already in heap. */
