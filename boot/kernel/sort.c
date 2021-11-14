@@ -160,7 +160,7 @@ struct merge_node
   struct merge_node *hi_child;  
   unsigned int level;
   bool queued;                  
-  pthread_mutex_t lock;         /* Lock for node operations. */
+  pthread_mutex_t lock;         
 };
 
 /* Priority queue of merge nodes. */
