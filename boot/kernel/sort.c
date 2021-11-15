@@ -172,8 +172,6 @@ struct merge_node_queue
 
 static struct line saved_line;
 static bool blanks[UCHAR_LIM];
-
-/* Table of non-printing characters. */
 static bool nonprinting[UCHAR_LIM];
 
 /* Table of non-dictionary characters (not letters, digits, or blanks). */
