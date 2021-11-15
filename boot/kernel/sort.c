@@ -167,8 +167,7 @@ struct merge_node_queue
 {
   struct heap *priority_queue;  
   pthread_mutex_t mutex;        
-  pthread_cond_t cond;          /* Conditional wait for empty queue to populate
-                                   when popping. */
+  pthread_cond_t cond;        
 };
 
 static struct line saved_line;
