@@ -165,7 +165,7 @@ struct merge_node
 
 struct merge_node_queue
 {
-  struct heap *priority_queue;  /* Priority queue of merge tree nodes. */
+  struct heap *priority_queue;  
   pthread_mutex_t mutex;        /* Lock for queue operations. */
   pthread_cond_t cond;          /* Conditional wait for empty queue to populate
                                    when popping. */
