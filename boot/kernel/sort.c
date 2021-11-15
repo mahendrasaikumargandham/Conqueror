@@ -163,7 +163,6 @@ struct merge_node
   pthread_mutex_t lock;         
 };
 
-/* Priority queue of merge nodes. */
 struct merge_node_queue
 {
   struct heap *priority_queue;  /* Priority queue of merge tree nodes. */
