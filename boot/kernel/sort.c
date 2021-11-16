@@ -193,8 +193,6 @@ static struct month monthtab[] =
   {"OCT", 10},
   {"SEP", 9}
 };
-
-/* During the merge phase, the number of files to merge at once. */
 #define NMERGE_DEFAULT 16
 
 /* Minimum size for a merge or check buffer.  */
