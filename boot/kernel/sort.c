@@ -174,7 +174,6 @@ static struct line saved_line;
 static bool blanks[UCHAR_LIM];
 static bool nonprinting[UCHAR_LIM];
 
-/* Table of non-dictionary characters (not letters, digits, or blanks). */
 static bool nondictionary[UCHAR_LIM];
 
 /* Translation table folding lower case to upper.  */
