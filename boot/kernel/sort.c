@@ -175,8 +175,6 @@ static bool blanks[UCHAR_LIM];
 static bool nonprinting[UCHAR_LIM];
 
 static bool nondictionary[UCHAR_LIM];
-
-/* Translation table folding lower case to upper.  */
 static char fold_toupper[UCHAR_LIM];
 
 #define MONTHS_PER_YEAR 12
