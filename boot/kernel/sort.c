@@ -195,7 +195,6 @@ static struct month monthtab[] =
 };
 #define NMERGE_DEFAULT 16
 
-/* Minimum size for a merge or check buffer.  */
 #define MIN_MERGE_BUFFER_SIZE (2 + sizeof (struct line))
 
 /* Minimum sort size; the code might not work with smaller sizes.  */
