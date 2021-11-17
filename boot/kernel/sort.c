@@ -210,8 +210,6 @@ static char const **temp_dirs;
 
 /* Number of temporary directory names used.  */
 static size_t temp_dir_count;
-
-/* Number of allocated slots in temp_dirs.  */
 static size_t temp_dir_alloc;
 
 static bool reverse;
