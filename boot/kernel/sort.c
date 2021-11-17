@@ -238,7 +238,6 @@ static bool unique;
 /* Nonzero if any of the input files are the standard input. */
 static bool have_read_stdin;
 
-/* List of key field comparisons to be tried.  */
 static struct keyfield *keylist;
 
 /* Program used to (de)compress temp files.  Must accept -d.  */
