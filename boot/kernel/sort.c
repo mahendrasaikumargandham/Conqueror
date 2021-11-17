@@ -222,7 +222,6 @@ static size_t temp_dir_count;
 /* Number of allocated slots in temp_dirs.  */
 static size_t temp_dir_alloc;
 
-/* Flag to reverse the order of all comparisons. */
 static bool reverse;
 
 /* Flag for stable sort.  This turns off the last ditch bytewise
