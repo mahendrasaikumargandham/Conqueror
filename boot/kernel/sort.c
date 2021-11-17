@@ -202,8 +202,6 @@ static struct month monthtab[] =
 
 static size_t merge_buffer_size = MAX (MIN_MERGE_BUFFER_SIZE, 256 * 1024);
 
-/* The approximate maximum number of bytes of main memory to use, as
-   specified by the user.  Zero if the user has not specified a size.  */
 static size_t sort_size;
 
 #define INPUT_FILE_SIZE_GUESS (128 * 1024)
