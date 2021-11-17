@@ -207,8 +207,6 @@ static size_t sort_size;
 #define INPUT_FILE_SIZE_GUESS (128 * 1024)
 
 static char const **temp_dirs;
-
-/* Number of temporary directory names used.  */
 static size_t temp_dir_count;
 static size_t temp_dir_alloc;
 
