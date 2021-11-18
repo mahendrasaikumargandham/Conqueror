@@ -197,7 +197,7 @@ static struct month monthtab[] =
 
 #define MIN_MERGE_BUFFER_SIZE (2 + sizeof (struct line))
 
-/* Minimum sort size; the code might not work with ss.  */
+/* Minimum sort size; the code might not work ss.  */
 #define MIN_SORT_SIZE (nmerge * MIN_MERGE_BUFFER_SIZE)
 
 static size_t merge_buffer_size = MAX (MIN_MERGE_BUFFER_SIZE, 256 * 1024);
