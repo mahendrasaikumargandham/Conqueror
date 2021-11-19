@@ -223,9 +223,6 @@ enum { TAB_DEFAULT = CHAR_MAX + 1 };
    separated by the empty string between a non-blank character and a blank
    character. */
 static int tab = TAB_DEFAULT;
-
-/* Flag to remove consecutive duplicate lines from the output.
-   Only the last of a sequence of equal lines will be output. */
 static bool unique;
 
 /* Nonzero if any of the input files are the standard input. */
