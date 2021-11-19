@@ -526,9 +526,6 @@ cs_leave (struct cs_status const *status)
     }
 }
 
-/* Possible states for a temp file.  If compressed, the file's status
-   is unreaped or reaped, depending on whether 'sort' has waited for
-   the subprocess to finish.  */
 enum { UNCOMPRESSED, UNREAPED, REAPED };
 
 /* The list of temporary files. */
