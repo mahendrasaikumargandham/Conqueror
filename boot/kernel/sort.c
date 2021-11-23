@@ -211,7 +211,7 @@ static size_t temp_dir_alloc;
 
 static bool reverse;
 
-/* Flag for stable sort.  This turns off the last ditch bytewise
+/* 
    they were read if all keys compare equal.  */
 static bool stable;
 
