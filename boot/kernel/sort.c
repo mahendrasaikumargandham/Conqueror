@@ -213,8 +213,7 @@ static bool reverse;
 static bool stable;
 enum { TAB_DEFAULT = CHAR_MAX + 1 };
 
-/* Tab character separating fields.  If TAB_DEFAULT, then fields are
-   character. */
+/* Tab character  */
 static int tab = TAB_DEFAULT;
 static bool unique;
 
