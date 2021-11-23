@@ -210,9 +210,6 @@ static size_t temp_dir_count;
 static size_t temp_dir_alloc;
 
 static bool reverse;
-
-/* 
-   they were read if all keys compare equal.  */
 static bool stable;
 
 /* If TAB has this value, blanks separate fields.  */
