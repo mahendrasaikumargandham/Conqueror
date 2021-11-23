@@ -211,8 +211,6 @@ static size_t temp_dir_alloc;
 
 static bool reverse;
 static bool stable;
-
-/* If TAB has this value, blanks separate fields.  */
 enum { TAB_DEFAULT = CHAR_MAX + 1 };
 
 /* Tab character separating fields.  If TAB_DEFAULT, then fields are
