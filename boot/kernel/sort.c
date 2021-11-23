@@ -212,8 +212,6 @@ static size_t temp_dir_alloc;
 static bool reverse;
 static bool stable;
 enum { TAB_DEFAULT = CHAR_MAX + 1 };
-
-/* Tab character  */
 static int tab = TAB_DEFAULT;
 static bool unique;
 
