@@ -214,7 +214,6 @@ static bool stable;
 enum { TAB_DEFAULT = CHAR_MAX + 1 };
 
 /* Tab character separating fields.  If TAB_DEFAULT, then fields are
-   separated by the empty string between a non-blank character and a blank
    character. */
 static int tab = TAB_DEFAULT;
 static bool unique;
