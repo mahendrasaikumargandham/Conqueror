@@ -478,8 +478,6 @@ static char const sort_types[] =
   SORT_TABLE
 #undef  _st_
 };
-
-/* The set of signals that are caught.  */
 static sigset_t caught_signals;
 
 /* Critical section status.  */
