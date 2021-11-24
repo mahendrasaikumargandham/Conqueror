@@ -220,8 +220,6 @@ static bool have_read_stdin;
 
 static struct keyfield *keylist;
 static char const *compress_program;
-
-/* Annotate the output with extra info to aid the user.  */
 static bool debug;
 
 /* Maximum number of files to merge in one go.  If more than this
