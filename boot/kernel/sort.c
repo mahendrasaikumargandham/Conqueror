@@ -219,8 +219,6 @@ static bool unique;
 static bool have_read_stdin;
 
 static struct keyfield *keylist;
-
-/* Program used to (de)compress temp files.  Must accept -d.  */
 static char const *compress_program;
 
 /* Annotate the output with extra info to aid the user.  */
