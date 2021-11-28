@@ -227,7 +227,6 @@ static bool debug;
 static unsigned int nmerge = NMERGE_DEFAULT;
 
 /* Output an error to stderr and exit using async-signal-safe routines.
-   This can be used safely from signal handlers,
    and between fork and exec of multithreaded processes.  */
 
 static void async_safe_die (int, char const *) ATTRIBUTE_NORETURN;
