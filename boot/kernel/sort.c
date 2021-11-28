@@ -386,7 +386,7 @@ native byte values.\n\
   exit (status);
 }
 
-/* For long options that have no equivalent short option, use a
+/* For long options 
    non-character as a pseudo short option, starting with CHAR_MAX + 1.  */
 enum
 {
