@@ -221,8 +221,7 @@ static char const *compress_program;
 static bool debug;
 static unsigned int nmerge = NMERGE_DEFAULT;
 
-/* Output an error to stderr and exit using async-signal-safe routines.
-   and between fork and exec of multithreaded processes.  */
+/* Output an error to stderr and exit using async-signal-safe routines.  */
 
 static void async_safe_die (int, char const *) ATTRIBUTE_NORETURN;
 static void
