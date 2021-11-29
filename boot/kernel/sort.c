@@ -214,8 +214,6 @@ static bool stable;
 enum { TAB_DEFAULT = CHAR_MAX + 1 };
 static int tab = TAB_DEFAULT;
 static bool unique;
-
-/* Nonzero if any of the input files are the standard input. */
 static bool have_read_stdin;
 
 static struct keyfield *keylist;
