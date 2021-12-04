@@ -228,7 +228,6 @@ async_safe_die (int errnum, char const *errstr)
   ignore_value (write (STDERR_FILENO, errstr, strlen (errstr)));
 
   /* Even if defined HAVE_STRERROR_R, we can't use it,
-     as it may return a translated string etc. and even if not
      For now just report the error number.  */
   if (errnum)
     {
