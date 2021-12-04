@@ -242,9 +242,6 @@ async_safe_die (int errnum, char const *errstr)
   _exit (SORT_FAILURE);
 }
 
-/* Report MESSAGE for FILE,
-   If FILE is null, it represents standard output.  */
-
 static void sort_die (char const *, char const *) ATTRIBUTE_NORETURN;
 static void
 sort_die (char const *message, char const *file)
