@@ -459,8 +459,6 @@ static char const sort_types[] =
 #undef  _st_
 };
 static sigset_t caught_signals;
-
-/* Critical section status.  */
 struct cs_status
 {
   bool valid;
