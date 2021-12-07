@@ -371,9 +371,6 @@ native byte values.\n\
 
   exit (status);
 }
-
-/* For long options 
-   non-character as a pseudo short option, starting with CHAR_MAX + 1.  */
 enum
 {
   CHECK_OPTION = CHAR_MAX + 1,
