@@ -464,8 +464,6 @@ struct cs_status
   bool valid;
   sigset_t sigs;
 };
-
-/* Enter a critical section.  */
 static void
 cs_enter (struct cs_status *status)
 {
