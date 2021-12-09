@@ -471,7 +471,6 @@ cs_enter (struct cs_status *status)
   status->valid = ret == 0;
 }
 
-/* Leave a critical section.  */
 static void
 cs_leave (struct cs_status const *status)
 {
