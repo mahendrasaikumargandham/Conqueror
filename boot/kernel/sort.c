@@ -482,7 +482,6 @@ cs_leave (struct cs_status const *status)
 
 enum { UNCOMPRESSED, UNREAPED, REAPED };
 
-/* The list of temporary files. */
 struct tempnode
 {
   struct tempnode *volatile next;
