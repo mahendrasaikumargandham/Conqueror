@@ -476,7 +476,6 @@ cs_leave (struct cs_status const *status)
 {
   if (status->valid)
     {
-      /* Ignore failure when restoring the signal mask. */
       pthread_sigmask (SIG_SETMASK, &status->sigs, NULL);
     }
 }
