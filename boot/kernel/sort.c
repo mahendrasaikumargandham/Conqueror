@@ -496,8 +496,6 @@ struct sortfile
 {
   /* The file's name.  */
   char const *name;
-
-  /* Non-null if this is a temporary file, in which case NAME == TEMP->name.  */
   struct tempnode *temp;
 };
 
