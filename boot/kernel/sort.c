@@ -494,7 +494,6 @@ static struct tempnode *volatile *temptail = &temphead;
 
 struct sortfile
 {
-  /* The file's name.  */
   char const *name;
   struct tempnode *temp;
 };
