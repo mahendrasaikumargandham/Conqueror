@@ -551,7 +551,7 @@ reap (pid_t pid)
   return cpid;
 }
 
-/* TEMP represents a new process; add it to the process table.  Create
+/* TEMP Create
    the process table the first time it's called.  */
 
 static void
