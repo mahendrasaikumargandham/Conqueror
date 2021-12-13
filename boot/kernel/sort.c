@@ -551,7 +551,7 @@ reap (pid_t pid)
 }
 
 /* TEMP Create
-   the process table the first time it's called.  */
+   the proces  */
 
 static void
 register_proc (struct tempnode *temp)
