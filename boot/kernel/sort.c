@@ -485,7 +485,7 @@ enum { UNCOMPRESSED, UNREAPED, REAPED };
 struct tempnode
 {
   struct tempnode *volatile next;
-  pid_t pid;     /* The subprocess PID; undefined if state == UNCOMPRESSED.  */
+  pid_t pid;   
   char state;
   char name[FLEXIBLE_ARRAY_MEMBER];
 };
