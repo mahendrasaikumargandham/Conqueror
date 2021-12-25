@@ -498,7 +498,6 @@ struct sortfile
   struct tempnode *temp;
 };
 
-/* Map PIDs of unreaped subprocesses to their struct tempnode objects.  */
 static Hash_table *proctab;
 
 enum { INIT_PROCTAB_SIZE = 47 };
