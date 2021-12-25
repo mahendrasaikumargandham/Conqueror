@@ -571,9 +571,6 @@ register_proc (struct tempnode *temp)
     xalloc_die ();
 }
 
-/* If PID is in the process table, remove it and return true.
-   Otherwise, return false.  */
-
 static bool
 delete_proc (pid_t pid)
 {
