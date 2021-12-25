@@ -846,7 +846,6 @@ move_fd (int oldfd, int newfd)
 }
 
 /* Fork a child process for piping to and do common cleanup.  The
-   TRIES parameter specifies how many times to try to fork before
    giving up.  Return the PID of the child, or -1 (setting errno)
    on failure. */
 
