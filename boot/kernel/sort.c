@@ -1012,8 +1012,7 @@ open_temp (struct tempnode *temp)
       break;
 
     case 0:
-      /* Being the child of a multithreaded program before exec,
-         we're restricted to calling async-signal-safe routines here.  */
+      /*  we're restricted to calling async-signal-safe routines here.  */
       close (pipefds[0]);
       move_fd (tempfd, STDIN_FILENO);
       move_fd (pipefds[1], STDOUT_FILENO);
