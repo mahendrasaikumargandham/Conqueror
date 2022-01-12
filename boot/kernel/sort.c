@@ -521,10 +521,7 @@ static pid_t nprocs;
 
 static bool delete_proc (pid_t);
 
-/* If PID is positive, wait   */
-
-static pid_t
-reap (pid_t pid)
+static pid_t reap (pid_t pid)
 {
   int status;
   pid_t cpid = waitpid ((pid ? pid : -1), &status, (pid ? 0 : WNOHANG));
