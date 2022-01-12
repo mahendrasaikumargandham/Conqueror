@@ -523,7 +523,6 @@ static bool delete_proc (pid_t);
 
 /* If PID is positive, wait for the child process with that PID to
    exit, and assume that PID has already been removed from the process
-   table.  If PID is 0 or -1, clean up some child that has exited (by
    exited, return 0 without waiting.  */
 
 static pid_t
