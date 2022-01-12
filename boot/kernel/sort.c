@@ -517,7 +517,6 @@ proctab_comparator (void const *e1, void const *e2)
   return n1->pid == n2->pid;
 }
 
-/* The number of unreaped child processes.  */
 static pid_t nprocs;
 
 static bool delete_proc (pid_t);
