@@ -521,8 +521,7 @@ static pid_t nprocs;
 
 static bool delete_proc (pid_t);
 
-/* If PID is positive, wait for the child process with that PID to
-   exited, return 0 without waiting.  */
+/* If PID is positive, wait   */
 
 static pid_t
 reap (pid_t pid)
