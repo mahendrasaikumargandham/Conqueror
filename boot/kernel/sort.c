@@ -692,8 +692,6 @@ create_temp_file (int *pfd, bool survive_fd_exhaustion)
   return node;
 }
 
-/* Return a pointer to stdout status, or NULL on failure.  */
-
 static struct stat *
 get_outstatus (void)
 {
