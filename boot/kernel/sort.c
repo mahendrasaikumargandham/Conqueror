@@ -608,8 +608,6 @@ reap_all (void)
     reap (-1);
 }
 
-/* Clean up any remaining temporary files.  */
-
 static void
 cleanup (void)
 {
