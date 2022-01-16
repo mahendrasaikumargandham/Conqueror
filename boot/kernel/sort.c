@@ -574,9 +574,6 @@ delete_proc (pid_t pid)
   return true;
 }
 
-/* Remove PID from the process table, and wait for it to exit if it
-   hasn't already.  */
-
 static void
 wait_proc (pid_t pid)
 {
