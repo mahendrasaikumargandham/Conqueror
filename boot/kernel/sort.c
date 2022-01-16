@@ -591,7 +591,6 @@ reap_exited (void)
     continue;
 }
 
-/* Reap at least one exited child, waiting if necessary.  */
 
 static void
 reap_some (void)
