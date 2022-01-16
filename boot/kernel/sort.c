@@ -663,8 +663,6 @@ create_temp_file (int *pfd, bool survive_fd_exhaustion)
   node->next = NULL;
   if (++temp_dir_index == temp_dir_count)
     temp_dir_index = 0;
-
-  /* Create the temporary file in a critical section, to avoid races.  */
   cs_enter (&cs);
   fd = mkostemp (file, O_CLOEXEC);
   if (0 <= fd)
