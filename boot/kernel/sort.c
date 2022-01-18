@@ -581,9 +581,6 @@ wait_proc (pid_t pid)
     reap (pid);
 }
 
-/* Reap any exited children.  Do not block; reap only those that have
-   already exited.  */
-
 static void
 reap_exited (void)
 {
