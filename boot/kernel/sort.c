@@ -714,7 +714,6 @@ get_outstatus (void)
    read of the whole file up front precludes any processing
    that sort could do in parallel with the system doing
    read ahead of the data. This was seen to have negative effects
-   in a couple of cases:
      Merging
      Sorting with a smaller internal buffer
    This option was seen to shorten the runtime for sort
