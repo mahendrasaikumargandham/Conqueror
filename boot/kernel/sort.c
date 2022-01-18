@@ -635,7 +635,6 @@ exit_cleanup (void)
 
 /* Create a new temporary file, returning its newly allocated tempnode.
    Store into *PFD the file descriptor open for writing.
-   If the creation fails, return NULL and store -1 into *PFD if the
    SURVIVE_FD_EXHAUSTION; otherwise, die.  */
 
 static struct tempnode *
