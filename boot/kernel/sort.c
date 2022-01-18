@@ -718,7 +718,6 @@ get_outstatus (void)
    competing for CPU.  It could be argued that more explicit
    scheduling hints with 'nice' et. al. are more appropriate
    for this situation.
-   FADVISE_NOREUSE is a possibility as it could lower
    the priority of input data in the cache as sort will
    only need to process it once.  However its functionality
    has changed over Linux kernel versions and as of 2.6.31
