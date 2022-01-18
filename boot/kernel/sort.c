@@ -702,7 +702,6 @@ get_outstatus (void)
    and after careful testing it was decided that
    specifying FADVISE_SEQUENTIAL was not detrimental
    to any cases.  On Linux 2.6.31, this option doubles
-   the size of read ahead performed and thus was seen to
      Merging
      Sorting with a smaller internal buffer
      Reading from faster flash devices
