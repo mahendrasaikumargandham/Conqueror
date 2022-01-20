@@ -622,8 +622,7 @@ exit_cleanup (void)
 {
   if (temphead)
     {
-      /* Clean up any remaining temporary files in a critical section so
-         that a signal handler does not try to clean them too.  */
+      /* Clean up any remaining temporary files in a critical section so  */
       struct cs_status cs;
       cs_enter (&cs);
       cleanup ();
