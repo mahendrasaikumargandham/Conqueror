@@ -596,8 +596,6 @@ reap_some (void)
   reap_exited ();
 }
 
-/* Reap all children, waiting if necessary.  */
-
 static void
 reap_all (void)
 {
