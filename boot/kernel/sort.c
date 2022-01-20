@@ -33,7 +33,9 @@
 #include "xstrtol-error.h"
 
 #ifndef RLIMIT_DATA
-struct rlimit { size_t rlim_cur; };
+struct rlimit { 
+  size_t rlim_cur; 
+};
 # define getrlimit(Resource, Rlp) (-1)
 #endif
 
@@ -64,9 +66,13 @@ struct rlimit { size_t rlim_cur; };
 #endif
 #define MAX_MERGE(total, level) (((total) >> (2 * ((level) + 1))) + 1)
 
-enum { SUBTHREAD_LINES_HEURISTIC = 128 * 1024 };
+enum { 
+  SUBTHREAD_LINES_HEURISTIC = 128 * 1024 
+};
 verify (4 <= SUBTHREAD_LINES_HEURISTIC);
-enum { DEFAULT_MAX_THREADS = 8 };
+enum { 
+  DEFAULT_MAX_THREADS = 8 
+};
 
 enum
   {
