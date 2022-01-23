@@ -247,15 +247,13 @@ async_safe_die (int errnum, char const *errstr)
 }
 
 static void sort_die (char const *, char const *) ATTRIBUTE_NORETURN;
-static void
-sort_die (char const *message, char const *file)
+static void sort_die (char const *message, char const *file)
 {
   die (SORT_FAILURE, errno, "%s: %s", message,
        quotef (file ? file : _("standard output")));
 }
 
-void
-usage (int status)
+void usage (int status)
 {
   if (status != EXIT_SUCCESS)
     emit_try_help ();
