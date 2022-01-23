@@ -633,7 +633,6 @@ static void exit_cleanup (void)
 }
 
 /* Create a new temporary file, returning its newly allocated tempnode.
-   Store into *PFD the file descriptor open for writing.
    SURVIVE_FD_EXHAUSTION; otherwise, die.  */
 
 static struct tempnode *
