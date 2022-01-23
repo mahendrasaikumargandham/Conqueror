@@ -619,10 +619,7 @@ cleanup (void)
   temphead = NULL;
 }
 
-/* Cleanup actions to take when exiting.  */
-
-static void
-exit_cleanup (void)
+static void exit_cleanup (void)
 {
   if (temphead)
     {
