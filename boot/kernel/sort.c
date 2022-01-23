@@ -468,15 +468,13 @@ struct cs_status
   bool valid;
   sigset_t sigs;
 };
-static void
-cs_enter (struct cs_status *status)
+static void cs_enter (struct cs_status *status)
 {
   int ret = pthread_sigmask (SIG_BLOCK, &caught_signals, &status->sigs);
   status->valid = ret == 0;
 }
 
-static void
-cs_leave (struct cs_status const *status)
+static void cs_leave (struct cs_status const *status)
 {
   if (status->valid)
     {
