@@ -504,15 +504,13 @@ static Hash_table *proctab;
 
 enum { INIT_PROCTAB_SIZE = 47 };
 
-static size_t
-proctab_hasher (void const *entry, size_t tabsize)
+static size_t proctab_hasher (void const *entry, size_t tabsize)
 {
   struct tempnode const *node = entry;
   return node->pid % tabsize;
 }
 
-static bool
-proctab_comparator (void const *e1, void const *e2)
+static bool proctab_comparator (void const *e1, void const *e2)
 {
   struct tempnode const *n1 = e1;
   struct tempnode const *n2 = e2;
