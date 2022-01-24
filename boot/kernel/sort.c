@@ -560,8 +560,7 @@ static void register_proc (struct tempnode *temp)
     xalloc_die ();
 }
 
-static bool
-delete_proc (pid_t pid)
+static bool delete_proc (pid_t pid)
 {
   struct tempnode test;
 
