@@ -628,8 +628,6 @@ static void exit_cleanup (void)
   close_stdout ();
 }
 
-/* Create a new temporary file, returning its newly allocated tempnode.
-   SURVIVE_FD_EXHAUSTION; otherwise, die.  */
 
 static struct tempnode *
 create_temp_file (int *pfd, bool survive_fd_exhaustion)
