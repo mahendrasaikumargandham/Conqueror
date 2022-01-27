@@ -570,37 +570,32 @@ static bool delete_proc (pid_t pid)
   return true;
 }
 
-static void
-wait_proc (pid_t pid)
+static void wait_proc (pid_t pid)
 {
   if (delete_proc (pid))
     reap (pid);
 }
 
-static void
-reap_exited (void)
+static void reap_exited (void)
 {
   while (0 < nprocs && reap (0))
     continue;
 }
 
 
-static void
-reap_some (void)
+static void reap_some (void)
 {
   reap (-1);
   reap_exited ();
 }
 
-static void
-reap_all (void)
+static void reap_all (void)
 {
   while (0 < nprocs)
     reap (-1);
 }
 
-static void
-cleanup (void)
+static void cleanup (void)
 {
   struct tempnode const *node;
 
