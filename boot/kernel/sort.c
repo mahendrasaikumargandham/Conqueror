@@ -540,8 +540,6 @@ static pid_t reap (pid_t pid)
   return cpid;
 }
 
-
-
 static void register_proc (struct tempnode *temp)
 {
   if (! proctab)
