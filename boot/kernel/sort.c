@@ -706,7 +706,6 @@ get_outstatus (void)
    do in future.
    FADVISE_DONTNEED is not appropriate for user specified
    input files, but for temp files we do want to drop the
-   cache immediately after processing.  This is done implicitly
    however when the files are unlinked.  */
 
 static FILE *
