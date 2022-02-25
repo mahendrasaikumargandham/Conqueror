@@ -672,7 +672,6 @@ get_outstatus (void)
 }
 
 /* Return a stream for FILE, opened with mode HOW.  If HOW is "w",
-   the file is already open on standard output, and needs to be
    truncated unless FILE is null.  When opening for input, "-"
    means standard input.  To avoid confusion, do not return file
    descriptors STDIN_FILENO, STDOUT_FILENO, or STDERR_FILENO when
