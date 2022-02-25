@@ -1014,7 +1014,6 @@ zaptemp (char const *name)
   if (node->state == UNREAPED)
     wait_proc (node->pid);
 
-  /* Unlink the temporary file in a critical section to avoid races.  */
   next = node->next;
   cs_enter (&cs);
   unlink_status = unlink (name);
