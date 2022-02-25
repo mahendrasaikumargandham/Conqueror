@@ -682,7 +682,6 @@ get_outstatus (void)
    and after careful testing it was decided that
    specifying FADVISE_SEQUENTIAL was not detrimental
      Merging
-     Sorting with a smaller internal buffer
      Reading from faster flash devices
    In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
