@@ -679,7 +679,6 @@ get_outstatus (void)
    Use fadvise to specify an access pattern for input files.
    There are a few hints we could possibly provide,
    and after careful testing it was decided that
-   specifying FADVISE_SEQUENTIAL was not detrimental
      Merging
      Reading from faster flash devices
    In _addition_ one could also specify other hints...
