@@ -680,7 +680,6 @@ get_outstatus (void)
    There are a few hints we could possibly provide,
    and after careful testing it was decided that
      Merging
-     Reading from faster flash devices
    In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
    at least uses that to _synchronously_ prepopulate the cache
