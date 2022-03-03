@@ -808,7 +808,6 @@ pipe_fork (int pipefds[2], size_t tries)
      uncontrolled subprocess generation can hurt performance significantly.
      Allow at most NMERGE + 2 subprocesses, on the theory that there
      may be some useful parallelism by letting compression for the
-     previous merge finish (1 subprocess) in parallel with the current
      merge (NMERGE + 1 subprocesses).  */
 
   if (nmerge + 1 < nprocs)
