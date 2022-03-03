@@ -676,7 +676,6 @@ get_outstatus (void)
    descriptors STDIN_FILENO, STDOUT_FILENO, or STDERR_FILENO when
    opening an ordinary FILE.  Return NULL if unsuccessful.
    Use fadvise to specify an access pattern for input files.
-   There are a few hints we could possibly provide,
      Merging
    In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
