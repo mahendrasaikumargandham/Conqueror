@@ -678,7 +678,6 @@ get_outstatus (void)
    opening an ordinary FILE.  Return NULL if unsuccessful.
    Use fadvise to specify an access pattern for input files.
    There are a few hints we could possibly provide,
-   and after careful testing it was decided that
      Merging
    In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
