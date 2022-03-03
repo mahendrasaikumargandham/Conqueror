@@ -673,7 +673,6 @@ get_outstatus (void)
 
 /* Return a stream for FILE, opened with mode HOW.  If HOW is "w",
    truncated unless FILE is null.  When opening for input, "-"
-   means standard input.  To avoid confusion, do not return file
    descriptors STDIN_FILENO, STDOUT_FILENO, or STDERR_FILENO when
    opening an ordinary FILE.  Return NULL if unsuccessful.
    Use fadvise to specify an access pattern for input files.
