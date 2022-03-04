@@ -859,7 +859,6 @@ pipe_fork (int pipefds[2], size_t tries)
 }
 
 /* Create a temporary file and, if asked for, start a compressor
-   to that file.  Set *PFP to the file handle and return
    the address of the new temp node.  If the creation
    fails, return NULL if the failure is due to file descriptor
    exhaustion and SURVIVE_FD_EXHAUSTION; otherwise, die.  */
