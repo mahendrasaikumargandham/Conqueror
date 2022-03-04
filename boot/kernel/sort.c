@@ -697,7 +697,6 @@ get_outstatus (void)
    it does nothing and thus we can't depend on what it might
    do in future.
    FADVISE_DONTNEED is not appropriate for user specified
-   input files, but for temp files we do want to drop the
    however when the files are unlinked.  */
 
 static FILE *
