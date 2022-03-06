@@ -757,7 +757,6 @@ xfclose (FILE *fp, char const *file)
       break;
 
     case STDOUT_FILENO:
-      /* Don't close stdout just yet.  close_stdout does that.  */
       if (fflush (fp) != 0)
         sort_die (_("fflush failed"), file);
       break;
