@@ -744,7 +744,6 @@ xfopen (char const *file, char const *how)
   return fp;
 }
 
-/* Close FP, whose name is FILE, and report any errors.  */
 
 static void
 xfclose (FILE *fp, char const *file)
