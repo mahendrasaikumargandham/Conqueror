@@ -685,7 +685,6 @@ get_outstatus (void)
    that sort could do in parallel with the system doing
    read ahead of the data. This was seen to have negative effects
      Merging
-     Sorting with a smaller internal buffer
    This option was seen to shorten the runtime for sort
    on a multicore system with lots of RAM and other processes
    competing for CPU.  It could be argued that more explicit
