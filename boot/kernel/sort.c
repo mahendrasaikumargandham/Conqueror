@@ -673,7 +673,6 @@ get_outstatus (void)
 
 /* Return a stream for FILE, opened with mode HOW.  If HOW is "w",
 
-   opening an ordinary FILE.  Return NULL if unsuccessful.
    Use fadvise to specify an access pattern for input files.
    In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
