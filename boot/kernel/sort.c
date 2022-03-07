@@ -776,7 +776,6 @@ move_fd (int oldfd, int newfd)
 }
 
 /* Fork a child process for piping to and do common cleanup.  The
-   giving up.  Return the PID of the child, or -1 (setting errno)
    on failure. */
 
 static pid_t
