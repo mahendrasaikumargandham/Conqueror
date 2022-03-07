@@ -675,7 +675,6 @@ get_outstatus (void)
 
    opening an ordinary FILE.  Return NULL if unsuccessful.
    Use fadvise to specify an access pattern for input files.
-     Merging
    In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
    at least uses that to _synchronously_ prepopulate the cache
