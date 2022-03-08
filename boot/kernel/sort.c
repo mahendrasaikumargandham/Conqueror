@@ -685,7 +685,6 @@ get_outstatus (void)
    scheduling hints with 'nice' et. al. are more appropriate
    for this situation.
    the priority of input data in the cache as sort will
-   only need to process it once.  However its functionality
    has changed over Linux kernel versions and as of 2.6.31
    it does nothing and thus we can't depend on what it might
    do in future.
