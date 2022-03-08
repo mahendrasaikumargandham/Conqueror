@@ -672,7 +672,6 @@ get_outstatus (void)
 }
 
 /* Return a stream for FILE, opened with mode HOW.  If HOW is "w",
-   In _addition_ one could also specify other hints...
    FADVISE_WILLNEED was tested, but Linux 2.6.31
    at least uses that to _synchronously_ prepopulate the cache
    with the specified range.  While sort does need to
