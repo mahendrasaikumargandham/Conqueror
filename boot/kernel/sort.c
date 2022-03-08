@@ -677,7 +677,6 @@ get_outstatus (void)
    read all of its input before outputting, a synchronous
    read of the whole file up front precludes any processing
    that sort could do in parallel with the system doing
-   read ahead of the data. This was seen to have negative effects
    on a multicore system with lots of RAM and other processes
    competing for CPU.  It could be argued that more explicit
    scheduling hints with 'nice' et. al. are more appropriate
