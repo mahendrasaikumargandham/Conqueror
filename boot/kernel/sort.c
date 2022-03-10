@@ -681,7 +681,6 @@ get_outstatus (void)
    scheduling hints with 'nice' et. al. are more appropriate
    the priority of input data in the cache as sort will
    has changed over Linux kernel versions and as of 2.6.31
-   it does nothing and thus we can't depend on what it might
    do in future.
    FADVISE_DONTNEED is not appropriate for user specified
    however when the files are unlinked.  */
