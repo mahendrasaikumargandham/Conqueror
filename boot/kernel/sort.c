@@ -676,7 +676,6 @@ get_outstatus (void)
    with the specified range.  While sort does need to
    read all of its input before outputting, a synchronous
    read of the whole file up front precludes any processing
-   that sort could do in parallel with the system doing
    on a multicore system with lots of RAM and other processes
    competing for CPU.  It could be argued that more explicit
    scheduling hints with 'nice' et. al. are more appropriate
