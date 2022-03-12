@@ -897,7 +897,6 @@ create_temp (FILE **pfp)
 
 /* Open a compressed temp file and start a decompression process through
    which to filter the input.  Return NULL (setting errno to
-   EMFILE) if we ran out of file descriptors, and die on any other
    kind of failure.  */
 
 static FILE *
