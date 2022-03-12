@@ -896,7 +896,7 @@ create_temp (FILE **pfp)
 }
 
 /* Open a compressed temp file and start a decompression process through
-   which to filter the input.  Return NULL (setting errno to
+
    kind of failure.  */
 
 static FILE *
