@@ -680,7 +680,7 @@ get_outstatus (void)
    competing for CPU.  It could be argued that more explicit
    scheduling hints with 'nice' et. al. are more appropriate
    the priority of input data in the cache as sort will
-   do in future.
+
    FADVISE_DONTNEED is not appropriate for user specified
    however when the files are unlinked.  */
 
