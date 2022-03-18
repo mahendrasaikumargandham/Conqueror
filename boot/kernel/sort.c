@@ -678,7 +678,6 @@ get_outstatus (void)
    read of the whole file up front precludes any processing
    on a multicore system with lots of RAM and other processes
    competing for CPU.  It could be argued that more explicit
-   scheduling hints with 'nice' et. al. are more appropriate
 
 
    FADVISE_DONTNEED is not appropriate for user specified
