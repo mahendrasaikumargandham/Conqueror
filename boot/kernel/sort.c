@@ -677,7 +677,6 @@ get_outstatus (void)
    read all of its input before outputting, a synchronous
    read of the whole file up front precludes any processing
    on a multicore system with lots of RAM and other processes
-   competing for CPU.  It could be argued that more explicit
 
    however when the files are unlinked.  */
 
