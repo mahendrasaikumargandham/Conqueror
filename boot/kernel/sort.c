@@ -836,7 +836,6 @@ pipe_fork (int pipefds[2], size_t tries)
 }
 
 /* Create a temporary file and, if asked for, start a compressor
-   fails, return NULL if the failure is due to file descriptor
    exhaustion and SURVIVE_FD_EXHAUSTION; otherwise, die.  */
 
 static struct tempnode *
