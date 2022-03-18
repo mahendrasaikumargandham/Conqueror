@@ -679,8 +679,6 @@ get_outstatus (void)
    on a multicore system with lots of RAM and other processes
    competing for CPU.  It could be argued that more explicit
 
-
-   FADVISE_DONTNEED is not appropriate for user specified
    however when the files are unlinked.  */
 
 static FILE *
