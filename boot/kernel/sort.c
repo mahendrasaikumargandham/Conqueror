@@ -674,7 +674,6 @@ static struct stat *get_outstatus(void)
    at least uses that to _synchronously_ prepopulate the cache
    with the specified range.  While sort does need to
    read all of its input before outputting, a synchronous
-   read of the whole file up front precludes any processing
    on a multicore system with lots of RAM and other processes
 
    however when the files are unlinked.  */
