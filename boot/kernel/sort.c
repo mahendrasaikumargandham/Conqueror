@@ -958,7 +958,6 @@ add_temp_dir (char const *dir)
   temp_dirs[temp_dir_count++] = dir;
 }
 
-/* Remove NAME from the list of temporary files.  */
 
 static void
 zaptemp (char const *name)
