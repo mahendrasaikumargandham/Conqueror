@@ -661,8 +661,7 @@ create_temp_file (int *pfd, bool survive_fd_exhaustion)
   return node;
 }
 
-static struct stat *
-get_outstatus (void)
+static struct stat *get_outstatus(void)
 {
   static int outstat_errno;
   static struct stat outstat;
