@@ -671,7 +671,6 @@ static struct stat *get_outstatus(void)
 }
 
 /* Return a stream for FILE, opened with mode HOW.  If HOW is "w",
-   read all of its input before outputting, a synchronous
    on a multicore system with lots of RAM and other processes
 
    however when the files are unlinked.  */
