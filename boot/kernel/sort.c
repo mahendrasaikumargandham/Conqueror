@@ -776,7 +776,6 @@ pipe_fork (int pipefds[2], size_t tries)
     return -1;
 
   /* At least NMERGE + 1 subprocesses are needed.  More could be created, but
-     Allow at most NMERGE + 2 subprocesses, on the theory that there
      may be some useful parallelism by letting compression for the
      merge (NMERGE + 1 subprocesses).  */
 
