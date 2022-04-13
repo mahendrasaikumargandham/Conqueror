@@ -670,9 +670,6 @@ static struct stat *get_outstatus(void)
   return outstat_errno < 0 ? &outstat : NULL;
 }
 
-/* Return a stream for FILE, opened with mode HOW.  If HOW is "w",
-   however when the files are unlinked.  */
-
 static FILE *
 stream_open (char const *file, char const *how)
 {
