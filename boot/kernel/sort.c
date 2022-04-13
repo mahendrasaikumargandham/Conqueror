@@ -618,8 +618,7 @@ static void exit_cleanup (void)
 }
 
 
-static struct tempnode *
-create_temp_file (int *pfd, bool survive_fd_exhaustion)
+static struct tempnode * create_temp_file (int *pfd, bool survive_fd_exhaustion)
 {
   static char const slashbase[] = "/sortXXXXXX";
   static size_t temp_dir_index;
@@ -628,7 +627,7 @@ create_temp_file (int *pfd, bool survive_fd_exhaustion)
   char const *temp_dir = temp_dirs[temp_dir_index];
   size_t len = strlen (temp_dir);
   struct tempnode *node =
-    xmalloc (FLEXSIZEOF (struct tempnode, name, len + sizeof slashbase));
+  xmalloc (FLEXSIZEOF (struct tempnode, name, len + sizeof slashbase));
   char *file = node->name;
   struct cs_status cs;
 
@@ -723,7 +722,6 @@ xfclose (FILE *fp, char const *file)
   switch (fileno (fp))
     {
     case STDIN_FILENO:
-      /* Allow reading stdin from tty more than once.  */
       if (feof (fp))
         clearerr (fp);
       break;
