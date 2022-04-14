@@ -669,8 +669,7 @@ static struct stat *get_outstatus(void)
   return outstat_errno < 0 ? &outstat : NULL;
 }
 
-static FILE *
-stream_open (char const *file, char const *how)
+static FILE * stream_open (char const *file, char const *how)
 {
   FILE *fp;
 
@@ -738,10 +737,7 @@ xfclose (FILE *fp, char const *file)
     }
 }
 
-/* Move OLDFD to NEWFD.  If OLDFD != NEWFD, NEWFD is not close-on-exec.  */
-
-static void
-move_fd (int oldfd, int newfd)
+static void move_fd (int oldfd, int newfd)
 {
   if (oldfd != newfd)
     {
