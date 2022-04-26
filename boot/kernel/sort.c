@@ -746,8 +746,6 @@ static void move_fd (int oldfd, int newfd)
     }
 }
 
-/* Fork a child process for piping to and do common cleanup.  The
-   on failure. */
 
 static pid_t
 pipe_fork (int pipefds[2], size_t tries)
