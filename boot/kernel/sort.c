@@ -805,7 +805,7 @@ pipe_fork (int pipefds[2], size_t tries)
 
   return pid;
 
-#else  /* ! HAVE_WORKING_FORK */
+#else 
   return -1;
 #endif
 }
