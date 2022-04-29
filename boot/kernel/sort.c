@@ -769,8 +769,6 @@ pipe_fork (int pipefds[2], size_t tries)
 
   while (tries--)
     {
-      /* This is so the child process won't delete our temp files
-         if it receives a signal before exec-ing.  */
       cs_enter (&cs);
       saved_temphead = temphead;
       temphead = NULL;
