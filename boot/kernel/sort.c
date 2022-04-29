@@ -810,8 +810,6 @@ pipe_fork (int pipefds[2], size_t tries)
 #endif
 }
 
-/* Create a temporary file and, if asked for, start a compressor
-   exhaustion and SURVIVE_FD_EXHAUSTION; otherwise, die.  */
 
 static struct tempnode *
 maybe_create_temp (FILE **pfp, bool survive_fd_exhaustion)
