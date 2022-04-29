@@ -760,8 +760,6 @@ pipe_fork (int pipefds[2], size_t tries)
   if (pipe2 (pipefds, O_CLOEXEC) < 0)
     return -1;
 
-  /* At least NMERGE + 1 subprocesses are needed.  More could be created, but
-     merge (NMERGE + 1 subprocesses).  */
 
   if (nmerge + 1 < nprocs)
     reap_some ();
