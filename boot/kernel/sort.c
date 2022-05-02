@@ -836,8 +836,6 @@ maybe_create_temp (FILE **pfp, bool survive_fd_exhaustion)
         }
       else if (node->pid == 0)
         {
-          /* Being the child of a multithreaded program before exec,
-             we're restricted to calling async-signal-safe routines here.  */
           close (pipefds[1]);
           move_fd (tempfd, STDOUT_FILENO);
           move_fd (pipefds[0], STDIN_FILENO);
