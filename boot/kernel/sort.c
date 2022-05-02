@@ -853,9 +853,6 @@ maybe_create_temp (FILE **pfp, bool survive_fd_exhaustion)
   return node;
 }
 
-/* Create a temporary file and, if asked for, start a compressor
-   of the new temp node.  Die on failure.  */
-
 static struct tempnode *
 create_temp (FILE **pfp)
 {
