@@ -913,8 +913,6 @@ open_temp (struct tempnode *temp)
 
   return fp;
 }
-
-/* Append DIR to the array of temporary directory names.  */
 static void
 add_temp_dir (char const *dir)
 {
