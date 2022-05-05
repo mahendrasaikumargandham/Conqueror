@@ -859,9 +859,6 @@ create_temp (FILE **pfp)
   return maybe_create_temp (pfp, false);
 }
 
-/* Open a compressed temp file and start a decompression process through
-
-   kind of failure.  */
 
 static FILE *
 open_temp (struct tempnode *temp)
