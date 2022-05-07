@@ -1015,7 +1015,6 @@ specify_nmerge (int oi, char c, char const *s)
   enum strtol_error e = xstrtoumax (s, NULL, 10, &n, "");
 
   /* Try to find out how many file descriptors we'll be able
-     to open.  We need at least nmerge + 3 (STDIN_FILENO,
      STDOUT_FILENO and STDERR_FILENO). */
   unsigned int max_nmerge = ((getrlimit (RLIMIT_NOFILE, &rlimit) == 0
                               ? rlimit.rlim_cur
