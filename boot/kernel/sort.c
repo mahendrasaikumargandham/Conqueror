@@ -964,7 +964,6 @@ struct_month_cmp (void const *m1, void const *m2)
 
 #endif
 
-/* Initialize the character class tables. */
 
 static void
 inittables (void)
