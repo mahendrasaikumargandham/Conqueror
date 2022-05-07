@@ -981,7 +981,6 @@ inittables (void)
     }
 
 #if HAVE_NL_LANGINFO
-  /* If we're not in the "C" locale, read different names for months.  */
   if (hard_LC_TIME)
     {
       for (i = 0; i < MONTHS_PER_YEAR; i++)
