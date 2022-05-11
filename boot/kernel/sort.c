@@ -1003,8 +1003,6 @@ inittables (void)
 #endif
 }
 
-/* Specify how many inputs may be merged at once.
-   --batch-size option. */
 static void
 specify_nmerge (int oi, char c, char const *s)
 {
