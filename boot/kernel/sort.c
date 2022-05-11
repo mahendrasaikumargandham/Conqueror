@@ -1063,7 +1063,6 @@ specify_sort_size (int oi, char c, char const *s)
   char *suffix;
   enum strtol_error e = xstrtoumax (s, &suffix, 10, &n, "EgGkKmMPtTYZ");
 
-  /* The default unit is KiB.  */
   if (e == LONGINT_OK && ISDIGIT (suffix[-1]))
     {
       if (n <= UINTMAX_MAX / 1024)
