@@ -1003,8 +1003,7 @@ inittables (void)
 #endif
 }
 
-static void
-specify_nmerge (int oi, char c, char const *s)
+static void specify_nmerge (int oi, char c, char const *s)
 {
   uintmax_t n;
   struct rlimit rlimit;
