@@ -1049,8 +1049,7 @@ static void specify_nmerge (int oi, char c, char const *s)
   else
     xstrtol_fatal (e, oi, c, long_options, s);
 }
-static void
-specify_sort_size (int oi, char c, char const *s)
+static void specify_sort_size (int oi, char c, char const *s)
 {
   uintmax_t n;
   char *suffix;
