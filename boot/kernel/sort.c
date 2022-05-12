@@ -705,8 +705,7 @@ static FILE * stream_open (char const *file, char const *how)
   return fp;
 }
 
-static FILE *
-xfopen (char const *file, char const *how)
+static FILE * xfopen (char const *file, char const *how)
 {
   FILE *fp = stream_open (file, how);
   if (!fp)
