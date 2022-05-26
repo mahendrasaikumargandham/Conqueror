@@ -1089,8 +1089,6 @@ static void specify_sort_size (int oi, char c, char const *s)
 
   if (e == LONGINT_OK)
     {
-      /* If multiple sort sizes are specified, take the maximum, so
-         that option order does not matter.  */
       if (n < sort_size)
         return;
 
