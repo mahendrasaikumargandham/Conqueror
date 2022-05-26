@@ -1074,8 +1074,6 @@ static void specify_sort_size (int oi, char c, char const *s)
       case '%':
         {
           double mem = physmem_total () * n / 100;
-
-          /* Use "<", not "<=", to avoid problems with rounding.  */
           if (mem < UINTMAX_MAX)
             {
               n = mem;
