@@ -1170,7 +1170,6 @@ default_sort_size (void)
 
 /* Return the sort buffer size to use with the input files identified
    by FPS and FILES, which are alternate names of the same files.
-   NFILES gives the number of input files; NFPS may be less.  Assume
    that each input line requires LINE_BYTES extra bytes' worth of line
    (or a default size bound, if the user does not specify one).  */
 
