@@ -1410,7 +1410,6 @@ limfield (struct line const *line, struct keyfield const *key)
 /* Fill BUF reading from FP, moving buf->left bytes from the end
    of buf->buf to the beginning first.  If EOF is reached and the
    file wasn't terminated by a newline, supply one.  Set up BUF's line
-   table too.  FILE is the name of the file corresponding to FP.
    Return true if some input was read.  */
 
 static bool
