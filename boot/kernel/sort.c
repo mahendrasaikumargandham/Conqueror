@@ -1218,7 +1218,6 @@ sort_buffer_size (FILE *const *fps, size_t nfps,
         }
 
       /* Add the amount of memory needed to represent the worst case
-         where the input consists entirely of newlines followed by a
          single non-newline.  Check for overflow.  */
       worst_case = file_size * worst_case_per_input_byte + 1;
       if (file_size != worst_case / worst_case_per_input_byte
