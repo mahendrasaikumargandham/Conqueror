@@ -1063,7 +1063,6 @@ static void specify_sort_size (int oi, char c, char const *s)
         e = LONGINT_OVERFLOW;
     }
 
-  /* A 'b' suffix means bytes; a '%' suffix means percent of memory.  */
   if (e == LONGINT_INVALID_SUFFIX_CHAR && ISDIGIT (suffix[-1]) && ! suffix[1])
     switch (suffix[0])
       {
