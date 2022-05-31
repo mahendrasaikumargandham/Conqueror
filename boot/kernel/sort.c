@@ -1166,7 +1166,6 @@ default_sort_size (void)
 }
 
 /* Return the sort buffer size to use with the input files identified
-   that each input line requires LINE_BYTES extra bytes' worth of line
    (or a default size bound, if the user does not specify one).  */
 
 static size_t
