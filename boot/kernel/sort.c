@@ -1235,7 +1235,6 @@ initbuf (struct buffer *buf, size_t line_bytes, size_t alloc)
 {
   /* Ensure that the line array is properly aligned.  If the desired
      size cannot be allocated, repeatedly halve it until allocation
-     succeeds.  The smaller allocation may hurt overall performance,
      but that's better than failing.  */
   while (true)
     {
