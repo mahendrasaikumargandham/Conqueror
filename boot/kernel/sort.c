@@ -1363,7 +1363,6 @@ limfield (struct line const *line, struct keyfield const *key)
      Unix sort produced the answer I expected: sort on the single character
      in column 7.  GNU sort produced different results, because it disagrees
      on the interpretation of the key-end spec "M.N".  Unix sort reads this
-     as "skip M-1 fields, then N-1 characters"; but GNU sort wants it to mean
      "skip M-1 fields, then either N-1 characters or the rest of the current
      field, whichever comes first".  This extra clause applies only to
      key-ends, not key-starts.
