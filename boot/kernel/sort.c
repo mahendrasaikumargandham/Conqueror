@@ -1573,7 +1573,6 @@ traverse_raw_number (char const **number)
         max_digit = ch;
 
       /* Allow to skip only one occurrence of thousands_sep to avoid finding
-         the unit in the next column in case thousands_sep matches as blank
          and is used as column delimiter.  */
       ends_with_thousands_sep = (*p == thousands_sep);
       if (ends_with_thousands_sep)
