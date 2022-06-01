@@ -1348,7 +1348,6 @@ limfield (struct line const *line, struct keyfield const *key)
      [...]I believe I've found another bug in 'sort'.
      $ cat /tmp/sort.in
      a b c 2 d
-     pq rs 1 t
      $ textutils-1.15/src/sort -k1.7,1.7 </tmp/sort.in
      a b c 2 d
      pq rs 1 t
