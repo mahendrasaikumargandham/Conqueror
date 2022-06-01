@@ -1434,7 +1434,6 @@ fillbuf (struct buffer *buf, FILE *fp, char const *file)
           /* Read as many bytes as possible, but do not read so many
              bytes that there might not be enough room for the
              corresponding line array.  The worst case is when the
-             rest of the input file consists entirely of newlines,
              except that the last byte is not a newline.  */
           size_t readsize = (avail - 1) / (line_bytes + 1);
           size_t bytes_read = fread (ptr, 1, readsize, fp);
