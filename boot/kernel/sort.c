@@ -1158,7 +1158,6 @@ default_sort_size (void)
     size = total * 0.75;
 
   /* Return the minimum of MEM and SIZE, but no less than
-     MIN_SORT_SIZE.  Avoid the MIN macro here, as it is not quite
      right when only one argument is floating point.  */
   if (mem < size)
     size = mem;
