@@ -1200,8 +1200,6 @@ sort_buffer_size (FILE *const *fps, size_t nfps,
         file_size = st.st_size;
       else
         {
-          /* The file has unknown size.  If the user specified a sort
-             buffer size, use that; otherwise, guess the size.  */
           if (sort_size)
             return sort_size;
           file_size = INPUT_FILE_SIZE_GUESS;
