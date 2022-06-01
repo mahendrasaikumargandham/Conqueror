@@ -1125,7 +1125,6 @@ default_sort_size (void)
 {
   /* Let SIZE be MEM, but no more than the maximum object size,
      total memory, or system resource limits.  Don't bother to check
-     for values like RLIM_INFINITY since in practice they are not much
      less than SIZE_MAX.  */
   size_t size = SIZE_MAX;
   struct rlimit rlimit;
